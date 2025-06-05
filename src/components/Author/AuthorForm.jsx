@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function AuthorForm() {
+export default function AuthorForm({ onAuthorCreated }) {
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
   const [bio, setBio] = useState("");
@@ -16,6 +16,7 @@ export default function AuthorForm() {
     setPhoto("");
     setBio("");
     alert("Author created!");
+    if (onAuthorCreated) onAuthorCreated(); // Panggil fungsi untuk refresh list
   };
 
   return (

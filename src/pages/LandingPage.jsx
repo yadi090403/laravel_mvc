@@ -1,3 +1,4 @@
+import React from 'react';
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-white flex items-center justify-center px-6">
@@ -16,3 +17,4 @@ export default function LandingPage() {
     </div>
   );
 }
+

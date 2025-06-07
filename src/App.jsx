@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import AdminGenres from "./pages/AdminGenres";
 import AdminAuthors from "./pages/AdminAuthors";
+import Register from './pages/Register';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       </nav>
 
       <Routes>
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/admin/genres" element={<AdminGenres />} />
         <Route path="/admin/authors" element={<AdminAuthors />} />
@@ -22,6 +24,7 @@ export default function App() {
   );
 }
 
+// export default App;
 
 
 
